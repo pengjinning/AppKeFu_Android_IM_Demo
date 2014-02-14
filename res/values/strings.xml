@@ -8,5 +8,12 @@
     <string name="title_activity_message">MessageActivity</string>
     <string name="title_activity_black_list">BlackListActivity</string>
     <string name="title_activity_change_password">ChangePasswordActivity</string>
+    <string name="title_activity_create_muc">CreateMUCActivity</string>
+    <string name="title_activity_group_invite">GroupInviteActivity</string>
+    <string name="title_activity_group_notification">GroupNotificationActivity</string>
+    <string name="title_activity_group_members">GroupMembersActivity</string>
+    <string name="title_activity_group_joined">GroupJoinedActivity</string>
+    <string name="title_activity_group_exit">GroupExitActivity</string>
+    <string name="title_activity_group_join">GroupJoinActivity</string>
 
 </resources>

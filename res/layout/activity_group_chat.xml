@@ -31,69 +31,15 @@
             android:textColor="#ffffff"
             android:textSize="20sp"
             android:textStyle="bold" />
+        
     </RelativeLayout>
 
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/groupchat_top_layout"
-        android:fadingEdge="none" >
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
-
-            <!-- 
-                        <Button
-                android:id="@+id/create_room"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="14dp"
-                android:layout_marginLeft="12dp"
-                android:layout_marginRight="12dp"
-                android:layout_marginTop="14dp"
-                android:background="@drawable/appkefu_btn_style_green"
-                android:gravity="center"
-                android:padding="4dp"
-                android:text="创建新群"
-                android:textColor="#fff"
-                android:textSize="18sp" />
-             -->
-             
-            <Button
-                android:id="@+id/join_room"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="14dp"
-                android:layout_marginLeft="12dp"
-                android:layout_marginRight="12dp"
-                android:layout_marginTop="14dp"
-                android:background="@drawable/appkefu_btn_style_green"
-                android:gravity="center"
-                android:padding="4dp"
-                android:text="加入群"
-                android:textColor="#fff"
-                android:textSize="18sp" />
-
-            <!-- 
-                        <Button
-                android:id="@+id/exit_room"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="14dp"
-                android:layout_marginLeft="12dp"
-                android:layout_marginRight="12dp"
-                android:layout_marginTop="14dp"
-                android:background="@drawable/appkefu_btn_style_green"
-                android:gravity="center"
-                android:padding="4dp"
-                android:text="退出群"
-                android:textColor="#fff"
-                android:textSize="18sp" />
-             -->
-
-        </LinearLayout>
-    </ScrollView>
+    <ListView
+    	android:id="@+id/group_api_list_view"
+    	android:layout_below="@+id/groupchat_top_layout"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" />
 
 </RelativeLayout>
+
+

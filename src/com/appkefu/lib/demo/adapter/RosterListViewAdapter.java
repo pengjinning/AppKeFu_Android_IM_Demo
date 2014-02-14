@@ -76,6 +76,7 @@ public class RosterListViewAdapter extends BaseAdapter {
 	public View getView(int position, View convertView, ViewGroup parent) {
 		// TODO Auto-generated method stub
 		ViewHolder holder;
+		
 		if (convertView == null) {
 			convertView = inflater.inflate(R.layout.address_item, null);
 			holder = new ViewHolder();
@@ -83,7 +84,9 @@ public class RosterListViewAdapter extends BaseAdapter {
 			holder.name = (TextView) convertView.findViewById(R.id.recent_name);
 			holder.relation = (TextView) convertView.findViewById(R.id.relation_name);
 			convertView.setTag(holder);
-		} else {
+		} 
+		else 
+		{
 			holder = (ViewHolder) convertView.getTag();
 		}
 		
