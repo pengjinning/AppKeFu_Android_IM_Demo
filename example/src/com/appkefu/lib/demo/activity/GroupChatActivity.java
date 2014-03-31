@@ -6,9 +6,6 @@ import java.util.ArrayList;
 import com.appkefu.lib.demo.R;
 import com.appkefu.lib.demo.adapter.GroupChatAdapter;
 import com.appkefu.lib.demo.entity.ApiEntity;
-import com.appkefu.lib.interfaces.KFIMInterfaces;
-import com.appkefu.lib.ui.activity.KFMUCChatActivity;
-import com.appkefu.lib.xmpp.XmppMuc;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -57,6 +54,7 @@ public class GroupChatActivity extends Activity implements OnClickListener {
 			mApiArray.add(entity);
 		entity = new ApiEntity(10002, "加入群");
 			mApiArray.add(entity);
+			/*
 		entity = new ApiEntity(10003, "邀请加入群");
 			mApiArray.add(entity);
 		entity = new ApiEntity(10004, "群验证消息");
@@ -67,6 +65,7 @@ public class GroupChatActivity extends Activity implements OnClickListener {
 			mApiArray.add(entity);
 		entity = new ApiEntity(10007, "退出群");
 		 	mApiArray.add(entity);
+		 	*/
 			
 		mAdapter.notifyDataSetChanged();
 			
@@ -89,6 +88,7 @@ public class GroupChatActivity extends Activity implements OnClickListener {
 					intent = new Intent(GroupChatActivity.this, GroupJoinActivity.class);
 					startActivity(intent);
 					break;
+					/*
 				case 10003:
 					intent = new Intent(GroupChatActivity.this, GroupInviteActivity.class);
 					startActivity(intent);
@@ -109,6 +109,7 @@ public class GroupChatActivity extends Activity implements OnClickListener {
 					intent = new Intent(GroupChatActivity.this, GroupExitActivity.class);
 					startActivity(intent);
 					break;
+					*/
 				default:
 					break;
 				}

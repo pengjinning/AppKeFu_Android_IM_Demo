@@ -135,7 +135,7 @@ public class RegisterActivity extends Activity implements OnClickListener{
             	else if(result == 0)
             	{
             		Log.d("注册失败", "其他原因：有可能是短时间内重复注册，为防止恶意注册，服务器对同一个IP注册做了时间间隔限制，即10分钟内同一个IP只能注册一个账号");
-            		Toast.makeText(RegisterActivity.this, "注册失败:其他原因", Toast.LENGTH_LONG);
+            		Toast.makeText(RegisterActivity.this, "注册失败:其他原因", Toast.LENGTH_LONG).show();
             	}
   				
   				mRegisterBtn.setEnabled(true);

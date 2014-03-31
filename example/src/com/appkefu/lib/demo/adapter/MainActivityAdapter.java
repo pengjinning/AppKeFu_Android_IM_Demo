@@ -2,6 +2,7 @@ package com.appkefu.lib.demo.adapter;
 
 import java.util.List;
 
+import com.appkefu.lib.demo.R;
 import com.appkefu.lib.demo.entity.ApiEntity;
 import com.appkefu.lib.ui.entity.KFConversationEntity;
 import com.appkefu.lib.utils.KFResUtil;
@@ -54,9 +55,9 @@ public class MainActivityAdapter extends BaseAdapter {
 		
 		ViewHolder holder;
 		if (convertView == null) {
-			convertView = inflater.inflate(KFResUtil.getResofR(context).getLayout("api_item_layout"), null);
+			convertView = inflater.inflate(R.layout.api_item_layout, null);
 			holder = new ViewHolder();
-			holder.api_function = (TextView) convertView.findViewById(KFResUtil.getResofR(context).getId("api_function"));
+			holder.api_function = (TextView) convertView.findViewById(R.id.api_function);
 			convertView.setTag(holder);
 		} else {
 			holder = (ViewHolder) convertView.getTag();

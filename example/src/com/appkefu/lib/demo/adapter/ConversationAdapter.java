@@ -134,6 +134,7 @@ public class ConversationAdapter extends BaseAdapter {
 		if (entity.getCount() > 0) {
 			holder.count.setText(entity.getCount() + "");
 			holder.count.setTextColor(Color.BLACK);
+			holder.count.setVisibility(View.VISIBLE);
 		} else {
 			holder.count.setVisibility(View.INVISIBLE);
 		}

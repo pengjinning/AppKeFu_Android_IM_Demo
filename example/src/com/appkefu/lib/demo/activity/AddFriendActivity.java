@@ -74,15 +74,15 @@ public class AddFriendActivity extends Activity implements OnClickListener{
 		else 
 		{
 			//判断用户是否存在
-			if(KFIMInterfaces.isUserExist(friendUsername))
-			{
+			//if(KFIMInterfaces.isUserExist(friendUsername))
+			//{
 				//添加好友
 				KFIMInterfaces.addFriend(this, friendUsername, "我是昵称");
-			}	
-			else
-			{
-				Toast.makeText(this, "用户不存在", Toast.LENGTH_SHORT).show();
-			}
+			//}	
+			//else
+			//{
+			//	Toast.makeText(this, "用户不存在", Toast.LENGTH_SHORT).show();
+			//}
 		}  
 	}
 
